@@ -121,9 +121,9 @@ Response:
 ```
 
 ## Money Transfer Transaction
-Transfer money from one account to another:
+Transfer money from one account to another [Account id #1 will be debited and account id #2 will be credited with 3000 ]:
 ```
-    POST http://localhost:8080/transferMoney/1 [Account id #1 will be debited and account id #2 will be credited with 3000 
+    POST http://localhost:8080/transferMoney/1 
     {
 		originatorAccountNumber:1,
 		beneficiaryAccountNumber:2,
@@ -156,17 +156,18 @@ Response:
 
 ```
 ## Usage
-> Java 8+
 ### Quick Start - Run
-1.In Project Root Directory,type <br/>
+1. In Project Root Directory, type <br/>
 ```$xslt
- java -jar money-transfer-api-1.0.jar (App will be running on http://localhost:8080 ,if nothing is running on 8080)
+ java -jar money-transfer-api-1.0.jar
 ```
+This will start the application on http://localhost:8080 ,if the port is not used by another process.
 or
 ```$xslt
 1) ./gradlew build
-2) ./gradlew start (App will be running on http://localhost:8080 ,if nothing is running on 8080)
+2) ./gradlew start
 ```
+This will start the application on http://localhost:8080 ,if the port is not used by another process.
 ### Run All Tests[Make sure nothing is running on port 8080]
 ```$xslt
 ./gradlew test
