@@ -168,7 +168,8 @@ or
 2) ./gradlew start
 ```
 This will start the application on http://localhost:8080 ,if the port is not used by another process.
-### Run All Tests[Make sure nothing is running on port 8080]
+### Run All Tests
 ```$xslt
 ./gradlew test
 ```
+Note: Please ensure port 8080 on localhost is not blocked by another process
